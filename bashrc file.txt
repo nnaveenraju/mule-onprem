@@ -1,0 +1,12 @@
+#sudo su
+#vi ~/.bashrc
+
+#Install JDK
+#sudo yum install -y java-1.8.0-openjdk-devel
+
+#Add these 2..
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.432.b06-1.amzn2.0.1.x86_64
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+#sudo ./mule restart -M-Denv=test -M-Dmasterkey=**********t -M-Dmule.verbose.exceptions=true
